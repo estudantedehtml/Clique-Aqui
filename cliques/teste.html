@@ -1,0 +1,38 @@
+<div class="cronometro"><img  class="cronometroimg" src="cronometro.png" alt="">
+    <div id="ponteiro" class=""></div>
+    </div>
+
+
+    @charset "UTF-8";
+
+.cronometroimg {
+    width: 100px;
+    position: absolute;
+}
+
+#ponteiro.ponteiro {
+    position: relative;
+    top: 60px;
+    left: 30px;
+    width: 40px;
+    height: 10px;
+    background-color: black;
+    border-radius: 10px;
+    transform: rotateZ(90deg);
+    animation: rodar 10s ease-in-out both;
+}
+
+@keyframes rodar {
+    0% {
+        transform: rotateZ(90deg);
+    }
+    50% {
+        transform: rotateZ(180deg);
+    }
+    100% {
+        transform: rotateZ(270deg);
+    }
+}
+
+
+
